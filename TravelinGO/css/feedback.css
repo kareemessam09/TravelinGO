@@ -1,0 +1,109 @@
+
+
+body {
+    font-family: cursive;
+      background-position-x: center;
+      background-position-y: bottom;
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+      background-size: cover;
+      background-image: url("../image/2.jpeg");
+    }
+  
+    header {
+      background-color:#3471bc;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 150px;
+    border-bottom: 3px solid #000;
+    border-radius: 10px;
+    }
+  
+    main {
+      max-width: 700px;
+      margin: 20px auto;
+      padding: 50px;
+      background-color: #ffffff;
+      border-radius: 80px;
+      box-shadow: 0 2px 4px rgba(56, 15, 15, 0.1);
+    }
+
+    
+  
+  
+    textarea {
+      width: 590px;
+      height: 200px;
+      padding: 10px;
+      background-color: #ffffff;
+      border: 3px solid #3471bc;
+      border-radius: 5px;
+    }
+  
+     /* Add styles for the two text boxes */
+     input {
+       width: calc(50% - 10px);
+       height: 30px;
+       padding: 5px;
+       background-color: #ffffff;
+       border: 3px solid #3471bc;
+       border-radius: 5px;
+       margin-right:10px; /* Add some space between the text boxes */
+     }
+  
+     button {
+       background-color: #3471bc;
+       color: #FFF;
+       padding: 10px 20px;
+       border: none;
+       border-radius: 5px;
+       cursor: pointer;
+       margin-top: 10px;
+     }
+  
+     .message {
+       margin-top: 10px;
+       padding: 10px;
+       background-color: #E0E0E0;
+       border: 1px solid #3471bc;
+       border-radius: 5px;
+  
+     }
+  
+     .message {
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #ffffff;
+      border: 1px solid #3471bc;
+      border-radius: 5px;
+   
+    }
+   
+    .message-Container {
+     display: inline-block;
+     margin: 10px;
+   }
+  
+  /* Select the image element by its id */
+  img {
+    /* Set the width and height of the image */
+    width: 500px;
+    height: 400px;
+  
+    /* Make the image fill its container while preserving its aspect ratio */
+    object-fit: cover;
+  
+    /* Add a border around the image */
+    border: 5px #3471bc;
+  
+    /* Make the corners of the image rounded */
+    border-radius: 10px;
+  }
+  

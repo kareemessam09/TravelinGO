@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Feedback</title>
+  <link rel="stylesheet" type="text/css" href="../css/feedback.css">
+  <link rel="stylesheet" href="../css/nav.css">
+</head>
+<body>
+  <header>
+    <h1 style="font-size: 30px;" class="logo">Travelingo</h1>
+    <nav id="desktop-nav">
+            <div>
+              <ul style="font-size: 25px;"class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="feedBack.html">Feedback</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+              </ul>
+            </div>
+          </nav>
+          <nav id="hamburger-nav">
+            <div class="hamburger-menu">
+              <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+              </div>
+            </div>
+          </nav> 
+    
+  </header>
+  <h1 style="color: white; padding-left: 100px;">Share your feedback with us and inspire others to follow your footsteps🤍✈️</h1>
+  <main>
+    <!-- Add two text boxes for name and planet -->
+    <input id="name" type="text" placeholder="Write your name here">
+    <input id="trip" type="text" placeholder="Write the trip you went here">
+    <textarea id="feedback" placeholder="Write your feedback here"></textarea>
+    <input type="file" id="imageInput">
+    <button id="shareButton">Share</button>
+    
+    <div id="messageContainer"></div>
+
+
+  </main>
+  
+
+  
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

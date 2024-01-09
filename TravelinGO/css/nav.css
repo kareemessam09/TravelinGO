@@ -1,0 +1,230 @@
+/* Set the display property of the nav-links to flex */
+nav,
+.nav-links {
+	display: flex;
+  }
+  
+  /* Style for the main navigation container */
+  nav {
+	justify-content: space-around; /* Space around the items horizontally */
+	align-items: center; /* Center items vertically */
+	height: 10vh; /* Set the height to 10% of the viewport height */
+  }
+  
+  /* Style for the navigation links */
+  .nav-links {
+	gap: 2rem; /* Set the gap between items to 2rem */
+	list-style: none; /* Remove default list styles */
+	font-size: 1.5rem; /* Set font size to 1.5rem */
+  }
+  
+  /* Style for anchor links */
+  .nav-links a{
+	color: black;
+	text-decoration: none;
+	text-decoration-color: white;
+  }
+  
+  /* Hover effect for anchor links */
+  .nav-links a:hover  {
+	color: grey;
+	text-decoration: underline;
+	text-underline-offset: 1rem;
+	text-decoration-color: rgb(181, 181, 181);
+  }
+  
+  /* Style for the logo */
+  .logo {
+	font-size: 2rem;
+  }
+
+  
+  /* HAMBURGER MENU STYLES */
+  
+  /* Hide the hamburger navigation initially */
+  #hamburger-nav {
+	display: none;
+  }
+  
+  /* Style for the hamburger menu container */
+  .hamburger-menu {
+	position: relative;
+	display: inline-block;
+  }
+  
+  /* Style for the hamburger icon */
+  .hamburger-icon {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 24px;
+	width: 30px;
+	cursor: pointer;
+  }
+  
+  /* Style for the three lines in the hamburger icon */
+  .hamburger-icon span {
+	width: 100%;
+	height: 1px;
+	background-color: black;
+	transition: all 0.3 ease-in-out;
+  }
+  
+  /* Style for the menu links container */
+  .menu-links {
+	position: absolute;
+	top: 100%;
+	right: 0;
+	background-color: white;
+	width: fit-content;
+	max-height: 0;
+	overflow: hidden;
+	transition: all 0.3 ease-in-out;
+  }
+  
+  /* Style for individual menu links */
+  .menu-links a {
+	display: block;
+	padding: 10px;
+	text-align: center;
+	font-size: 1.5rem;
+	color: black;
+	text-decoration: none;
+	transition: all 0.3 ease-in-out;
+  }
+  
+  /* Remove default list styles for menu links */
+  .menu-links li {
+	list-style: none;
+  }
+  
+  /* Open state for the menu links container */
+  .menu-links.open {
+	max-height: 300px;
+  }
+  
+  /* Animation for the hamburger icon when menu is open */
+  .hamburger-icon.open span:first-child {
+	transform: rotate(45deg) translate(10px, 5px);
+  }
+  
+  .hamburger-icon.open span:nth-child(2) {
+	opacity: 0;
+  }
+  
+  .hamburger-icon.open span:last-child {
+	transform: rotate(-45deg) translate(10px, -5px);
+  }
+  
+  /* Reset styles for the hamburger icon in the closed state */
+  .hamburger-icon span:first-child {
+	transform: none;
+  }
+  
+  .hamburger-icon span:first-child {
+	opacity: 1;
+  }
+  
+  .hamburger-icon span:first-child {
+	transform: none;
+  }
+
+ footer{
+  border-radius: 0%;
+  background-color: black;
+}
+
+.footerContainer{
+   width: 100%;
+   padding: 70px 30px 20px;
+}
+.logoo{
+  display: flex;
+  justify-content:left;
+}
+.logoo img{
+  width:200px;
+  height:200px;
+}
+.socialIcons{
+   display: flex;
+   justify-content: center;
+   
+}
+.socialIcons a{
+   text-decoration: none;
+   padding: 10px;
+   background-color: white;
+   margin: 10px;
+   border-radius: 50%;
+}
+.socialIcons a i{
+   font-size: 2em;
+   color: black;
+   opacity: 0.9;
+}
+.socialIcons a:hover{
+   background-color: black;
+   transition: 0.5s;
+}
+.socialIcons a:hover i{
+   background-color: white;
+   transition: 0.5s;
+}
+.footerNav{
+   margin: 30px 0;
+}
+.footerNav ul{
+   display: flex;
+   justify-content: center;
+   list-style-type: disc;
+
+}
+.footerNav ul li a{
+   color: white;
+   margin: 20px;
+   text-decoration: none;
+   font-size: 1.4em;
+   opacity: 0.7;
+   transition: 0.7s;
+
+}
+.footerNav ul li a:hover{
+   opacity: 1;
+}
+.footerBottom{
+   background-color: black;
+   padding: 20px;
+   text-align: center;
+}
+.footerBottom p{
+   color: white;
+}
+.designer{
+   opacity: 0.7;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   font-weight: 400;
+   margin: 0px 5px;
+}
+@media (max-width: 700px) {
+   .footerNav ul{
+      flex-direction: column;
+   }
+   .footerNav ul li{
+      width: 100px;
+      text-align: center;
+      margin: 10px;
+   }
+   
+}
+  
+  /* Media query for screens with a maximum width of 1200px */
+  @media screen and (max-width: 1200px) {
+	#desktop-nav {
+	  display: none; /* Hide desktop navigation */
+	}
+	#hamburger-nav {
+	  display: flex; /* Show hamburger navigation */
+	}
+  }
